@@ -16,6 +16,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.1;
+  letter-spacing: 0.03em;
 }
 
 .container {
@@ -222,7 +223,7 @@ img {
   background-color: #188ce8;
 }
 
-.tiile-none {
+.title-none {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -512,16 +513,17 @@ img {
 .container-foter {
   display: flex;
 }
-.container-adress {
-}
+
 .address {
   font-style: inherit;
+  width: 231px;
 }
 
 .address-list {
   display: inline-block;
   list-style: none;
 }
+
 .address-link:nth-last-child(n + 2) {
   margin-bottom: 9px;
 }
@@ -531,16 +533,12 @@ img {
 
   text-decoration: none;
   font-style: inherit;
+
   line-height: 1.7;
 
   color: var(--white-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-contact:hover,
-.address-contact:focus {
-  color: var(--accnt-color);
 }
 
 .contact-mail {
@@ -552,11 +550,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.contact-mail:hover,
-.contact-mail:focus {
-  color: var(--accnt-color);
-}
-
 .contact-tell {
   text-decoration: none;
   line-height: 1.7;
@@ -564,11 +557,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-tell:hover,
-.contact-tell:focus {
-  color: var(--accnt-color);
 }
 
 .footer-icon {
@@ -614,6 +602,63 @@ img {
   width: 44px;
   height: 44px;
   fill: var(--white-color);
+}
+
+/* Footer-form
+========================== */
+
+.footer-form {
+  margin-left: 93px;
+}
+
+.footer-form-title {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form-box {
+  display: flex;
+}
+
+.footer-form-mail {
+  color: var(--white-color);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+}
+.footer-form-mail::placeholder {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 15px 295px 15px 16px;
+}
+.footer-form-button {
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  margin-left: 12px;
+
+  padding: 10px 62px 10px 29px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: 148px 50%;
+  background-image: url(../images/svg/icon-tviter.svg);
 }
 
 /* Portfolio
@@ -773,6 +818,7 @@ img {
   height: 581px;
 
   background-color: var(--white-color);
+  text-align: center;
 }
 
 .button-close {
@@ -815,6 +861,10 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
+.form {
+  margin-bottom: 30px;
+  text-align: initial;
+}
 
 .title-form {
   font-weight: bold;
@@ -850,6 +900,7 @@ img {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-box {
@@ -867,6 +918,7 @@ img {
   border-radius: 4px;
   outline: none;
   padding-left: 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:hover,
@@ -889,6 +941,7 @@ img {
   padding: 12px 16px;
   outline: none;
   margin-bottom: 20px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-textarea::placeholder {
   font-size: 12px;
@@ -922,5 +975,35 @@ img {
 .form-agree {
   font-size: 14px;
   line-height: 1.8;
-  letter-spacing: 0.03em;
+}
+
+.form-agree-link {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--accnt-color);
+}
+
+.form-button {
+  display: inline-block;
+  padding: 10px 55px;
+  background-color: var(--accnt-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form .form-button {
+  text-align: center;
+}
+.form-button:hover,
+.form-button:focus {
+  background-color: #188ce8;
 }

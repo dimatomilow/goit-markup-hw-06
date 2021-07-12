@@ -79,7 +79,7 @@
     =========================-->
       <section class="section">
         <div class="container">
-          <h2 class="tiile-none">Особенности</h2>
+          <h2 class="title-none">Особенности</h2>
           <ul class="features-list list">
             <li class="features-list-item">
               <div class="features-icon">
@@ -477,6 +477,23 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form">
+          <h3 class="footer-form-title">Подпишитесь на рассылку</h3>
+          <div class="form-box">
+            <form action="">
+              <label for="mail"></label>
+              <input
+                type="email"
+                id="mail"
+                placeholder="E-mail"
+                class="footer-form-mail"
+              />
+            </form>
+            <button type="submit" class="footer-form-button">
+              Подписаться
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
 
@@ -490,7 +507,7 @@
           </svg>
         </button>
         <h3 class="title-form">Оставьте свои данные, мы вам перезвоним</h3>
-        <form action="">
+        <form action="" class="form">
           <label for="user-name" class="form-label">Имя</label>
 
           <div class="form-box">
@@ -499,35 +516,36 @@
               name="user-name"
               class="form-input"
               id="user-name"
+              autofocus
             />
             <svg class="form-icon">
-              <use href="./images/svg/srite1.svg#user"></use>
+              <use href="./images/svg/sprite.svg#user"></use>
             </svg>
           </div>
 
           <label for="user-phone" class="form-label">Телефон</label>
           <div class="form-box">
             <input
-              type="text"
+              type="tel"
               name="user-phone"
               class="form-input"
               id="user-phone"
             />
             <svg class="form-icon">
-              <use href="./images/svg/srite1.svg#telefon"></use>
+              <use href="./images/svg/sprite.svg#phone"></use>
             </svg>
           </div>
 
           <label for="user-mail" class="form-label">Почта</label>
           <div class="form-box">
             <input
-              type="text"
+              type="email"
               name="user-mail"
               class="form-input"
               id="user-mail"
             />
             <svg class="form-icon">
-              <use href="./images/svg/srite1.svg#convert"></use>
+              <use href="./images/svg/sprite.svg#mail"></use>
             </svg>
           </div>
           <label for="" class="form-label">Комментарий</label>
@@ -544,16 +562,16 @@
             <input
               type="checkbox"
               id="modal-checkbox"
-              class="checkbox tiile-none"
+              class="checkbox title-none"
             />
             <span class="checkbox-box"></span>
             <span class="form-agree"
               >Соглашаюсь с рассылкой и принимаю
-              <a href="">Условия договора</a></span
+              <a href="" class="form-agree-link">Условия договора</a></span
             >
           </label>
         </form>
-        <button type="submit">Отправить</button>
+        <button type="submit" class="form-button">Отправить</button>
       </div>
     </div>
 
